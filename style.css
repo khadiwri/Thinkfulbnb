@@ -31,7 +31,8 @@ section.alternate-background {
 }
 
 main img {
-  width: 100px;
+  width: 100%;
+  margin: 5px 0 15px;
 }
 
 /* ---  Groups & Items --- */
@@ -39,6 +40,15 @@ main img {
 .group {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .item {
@@ -60,8 +70,20 @@ header {
 
 .logo {
   font-family: "Pangolin", cursive;
-  font-size: 72px;
+  font-size: 50px;
   color: #fff;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 header nav ul li {
@@ -79,7 +101,7 @@ header nav ul li a:hover {
   text-decoration: none;
 }
 
-/* -------  Search Form ------- */
+/* -------  Search Form Box------- */
 form {
   border: 2px solid #ff385c;
   padding: 10px;
@@ -116,4 +138,49 @@ footer p {
   padding: 20px;
 }
 
-/* -------  Media Query ------- */
+/* -------  Media Queries ------- */
+@media all and (min-width: 480px) {
+  .item {
+    align-self: center;
+  }
+
+  .item-double {
+    align-self: center;
+    padding-left: 10px;
+  }
+
+  .logo {
+    font-size: 68px;
+  }
+
+  header nav ul li {
+    font-size: 16px;
+  }
+
+  form button {
+    width: 60%;
+  }
+}
+
+@media all and (min-width: 800px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form-group {
+    display: block;
+  }
+
+  .logo {
+    font-size: 68px;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+
+  form input {
+    width: 100%;
+  }
+}
