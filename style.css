@@ -46,7 +46,7 @@ main img {
 
 .form-group {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -105,6 +105,7 @@ header nav ul li a:hover {
 form {
   border: 2px solid #ff385c;
   padding: 10px;
+  
 }
 
 form label {
@@ -125,7 +126,6 @@ form button {
   padding: 15px;
   width: 100%;
 }
-
 /* -------  Footer ------- */
 
 footer {
